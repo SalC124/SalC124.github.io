@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #2996a6;
+  color: #7cfb96;
   background-color: #070707;
 }
 
@@ -32,6 +32,7 @@ a:hover{
 
 .custcard {
   width: 150px;
+  height: 115px;
   display: flex;
   flex-direction: column;
   border-image: linear-gradient(#7cfb96, #4b78f4) 30;
@@ -41,8 +42,15 @@ a:hover{
   margin: 5px;
 }
 
+.custcard:hover {
+  width: 160px;
+  height: 125px;
+  margin: 0px;
+}
+
 .custcardbetter {
   width: 150px;
+  height: 115px;
   display: flex;
   flex-direction: column;
   border-image: linear-gradient(#e73aa1, #3b1bf3) 30;
@@ -50,6 +58,12 @@ a:hover{
   border-style: solid;
   overflow: hidden;
   margin: 5px;
+}
+
+.custcardbetter:hover {
+  width: 160px;
+  height: 125px;
+  margin: 0px;
 }
 
 .card-header {
