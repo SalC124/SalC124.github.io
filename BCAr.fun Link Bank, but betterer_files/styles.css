@@ -6,8 +6,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #0097A7;
-  background-color: #36393f;
+  color: #2996a6;
+  background-color: #070707;
 }
 
 a {
@@ -16,11 +16,6 @@ a {
 
 a:hover{
   text-decoration: none;
-}
-
-a:hover .card-header, a:hover .main-description{
-	text-decoration: underline;
-	text-decoration-color: #0097A7;
 }
 
 .center{
@@ -36,42 +31,40 @@ a:hover .card-header, a:hover .main-description{
 }
 
 .custcard {
-  width: 150px;                 /* Set width of cards */
-  display: flex;                /* Children use Flexbox */
-  flex-direction: column;       /* Rotate Axis */
-  border: 1px solid #80DEEA;  /* Set up Border */
-  border-radius: 4px;           /* Slightly Curve edges */
-  overflow: hidden;             /* Fixes the corners */
-  margin: 5px;                  /* Add space between cards */
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  border-image: linear-gradient(#7cfb96, #4b78f4) 30;
+  border-width: 4px;
+  border-style: solid;
+  overflow: hidden;
+  margin: 5px;
 }
 
 .custcardbetter {
   width: 150px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #f7f021;
-  border-radius: 4px;
+  border-image: linear-gradient(#e73aa1, #3b1bf3) 30;
+  border-width: 4px;
+  border-style: solid;
   overflow: hidden;
   margin: 5px;
 }
 
 .card-header {
-  color: #0097A7;
+  color: linear-gradient(#7cfb96, #4b78f4) 30;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
-  border-bottom: 1px solid #80DEEA;
-  background-color: #E0F7FA;
   padding: 5px 10px;
 }
 
 .card-headerbetter {
-  color: #e88a1f;
+  color: linear-gradient(#e73aa1, #3b1bf3) 30;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
-  border-bottom: 1px solid #f7f021;
-  background-color: #f6fae0;
   padding: 5px 10px;
 }
 
@@ -85,52 +78,21 @@ a:hover .card-header, a:hover .main-description{
 
 i {
   font-size: 36px;
-  color: #0097A7;
+  color: #74e4bb;
+  margin-bottom: 5px;
+}
+
+ibetter {
+  font-size: 36px;
+  color: #c533df;
   margin-bottom: 5px;
 }
 
 .main-description {
-  color: #0097A7;
-  font-size: 12px;
-  text-align: center;
-}
-
-.main-descriptionbetter {
-  color: #e8c31f;
   font-size: 12px;
   text-align: center;
 }
 
 .parent {
   overflow: hidden; /* required */
-}
-
-.ribbon {
-  margin: 0;
-  padding: 0;
-  background: #E0F7FA;
-  color: #0097A7;
-  padding:1em 0;
-  position: absolute;
-  top:0;
-  right:0;
-  transform: translateX(30%) translateY(0%) rotate(45deg);
-  transform-origin: top left;
-}
-.ribbon:before,
-.ribbon:after {
-  content: '';
-  position: absolute;
-  top:0;
-  margin: 0 -1px; /* tweak */
-  width: 100%;
-  height: 100%;
-  background: #E0F7FA;
-}
-.ribbon:before {
-  right:100%;
-}
-
-.ribbon:after {
-  left:100%;
 }
