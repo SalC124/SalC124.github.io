@@ -12,7 +12,6 @@ body {
 
 a {
 	text-decoration: none;
-  color: #FFFFFF;
 }
 
 a:hover{
@@ -94,13 +93,13 @@ a:hover{
 
 i {
   font-size: 36px;
-  color: #FFFFFF;
+  color: #74e4bb;
   margin-bottom: 5px;
 }
 
 ibetter {
   font-size: 36px;
-  color: #FFFFFF;
+  color: #c533df;
   margin-bottom: 5px;
 }
 
