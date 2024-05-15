@@ -34,20 +34,22 @@ a:hover{
 .custcard {
   width: 150px;
   width: 150px;
-    height: 115px;
-    display: flex;
-    flex-direction: column;
-    /* 
-    background: rgb(249, 82, 102);
-    background: linear-gradient(135deg, rgba(249, 82, 102, 1) 0%, rgba(146, 220, 254, 1) 100%); */
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  /* 
+  background: rgb(249, 82, 102);
+  background: linear-gradient(135deg, rgba(249, 82, 102, 1) 0%, rgba(146, 220, 254, 1) 100%);
   
-    border-image: linear-gradient(135deg,
-        rgba(134, 176, 156, 1) 0%,
-        rgba(146, 220, 254, 1) 100%) 30;
-    border-width: 4px;
-    border-style: solid;
-    overflow: hidden;
-    margin: 5px;
+  border-image: linear-gradient(135deg,
+    rgba(146, 220, 254, 1) 100%) 30;
+    rgba(134, 176, 156, 1) 0%,
+  */
+  border-width: 4px;
+  border: 2px solid rgba(146,220,254);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
 }
 
 .custcard:hover {
