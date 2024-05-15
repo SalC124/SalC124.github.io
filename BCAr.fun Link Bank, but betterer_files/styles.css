@@ -79,6 +79,17 @@ i {
   margin-bottom: 5px;
 }
 
+.footer-text {
+  padding: 20px 0;
+  width: 70%;
+  margin: auto;
+}
+
+.divider-line {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  margin-bottom: 20px;
+}
+
 .main-description {
   font-size: 12px;
   text-align: center;
