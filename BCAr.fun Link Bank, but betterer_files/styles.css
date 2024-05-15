@@ -6,8 +6,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #7cfb96;
-  background-color: #191919;
+  color: #FFFFFF;
+  background-color: #2a2d3e;
 }
 
 a {
@@ -33,14 +33,21 @@ a:hover{
 
 .custcard {
   width: 150px;
-  height: 115px;
-  display: flex;
-  flex-direction: column;
-  border-image: linear-gradient(#7cfb96, #4b78f4) 30;
-  border-width: 4px;
-  border-style: solid;
-  overflow: hidden;
-  margin: 5px;
+  width: 150px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    /* 
+    background: rgb(249, 82, 102);
+    background: linear-gradient(135deg, rgba(249, 82, 102, 1) 0%, rgba(146, 220, 254, 1) 100%); */
+  
+    border-image: linear-gradient(135deg,
+        rgba(134, 176, 156, 1) 0%,
+        rgba(146, 220, 254, 1) 100%) 30;
+    border-width: 4px;
+    border-style: solid;
+    overflow: hidden;
+    margin: 5px;
 }
 
 .custcard:hover {
@@ -49,34 +56,7 @@ a:hover{
   margin: 0px;
 }
 
-.custcardbetter {
-  width: 150px;
-  height: 115px;
-  display: flex;
-  flex-direction: column;
-  border-image: linear-gradient(#e73aa1, #3b1bf3) 30;
-  border-width: 4px;
-  border-style: solid;
-  overflow: hidden;
-  margin: 5px;
-}
-
-.custcardbetter:hover {
-  width: 160px;
-  height: 125px;
-  margin: 0px;
-}
-
 .card-header {
-  color: linear-gradient(#7cfb96, #4b78f4) 30;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 5px 10px;
-}
-
-.card-headerbetter {
-  color: linear-gradient(#e73aa1, #3b1bf3) 30;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
@@ -94,12 +74,6 @@ a:hover{
 i {
   font-size: 36px;
   color: #74e4bb;
-  margin-bottom: 5px;
-}
-
-ibetter {
-  font-size: 36px;
-  color: #c533df;
   margin-bottom: 5px;
 }
 
