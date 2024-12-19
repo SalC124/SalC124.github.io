@@ -25,8 +25,12 @@
   --perry: #d1e8e2;
 
 }
+h1 {
+  font-size: 96px;
+}
 
 body {
+  font-size: 32px;
   font-family: 'Open Sans', sans-serif;
   min-height: 95vh;
   overflow-x: hidden;
