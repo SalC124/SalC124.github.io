@@ -29,6 +29,10 @@ h1 {
   font-size: 96px;
 }
 
+* {
+  overflow-wrap: break-word;
+}
+
 body {
   font-size: 32px;
   font-family: 'Open Sans', sans-serif;
@@ -60,8 +64,8 @@ a {
 }
 
 .custcard {
-  width: 150px;
-  height: 115px;
+  width: 8vw; /* 150px */
+  height: 10vh; /* 115px */
   display: flex;
   flex-direction: column;
   border-width: 4px;
@@ -80,9 +84,14 @@ a {
 
 .card-header {
   text-align: center;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   padding: 5px 10px;
+}
+
+.main-description {
+  font-size: 16px;
+  text-align: center;
 }
 
 .card-main {
@@ -90,11 +99,11 @@ a {
   flex-direction: column;     /* Rotate Axis to Vertical */
   justify-content: center;    /* Group Children in Center */
   align-items: center;        /* Group Children in Center (on cross axis) */
-  padding: 15px 0;            /* Add padding to the top/bottom */
+  padding: 15px 1;            /* Add padding to the top/bottom */
 }
 
 i {
-  font-size: 32px;
+  font-size: 48px;
   color: var(--green);
   margin-bottom: 5px;
 }
@@ -102,11 +111,6 @@ i {
 .divider-line {
   border-bottom: 1px solid rgb(229, 229, 229);
   margin-bottom: 20px;
-}
-
-.main-description {
-  font-size: 12px;
-  text-align: center;
 }
 
 .parent {
