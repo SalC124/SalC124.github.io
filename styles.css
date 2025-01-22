@@ -1,21 +1,21 @@
 :root {
-  --black: #2e3440;
-  --darker-gray: #3b4252;
-  --dark-gray: #434c5e;
-  --gray: #4c566a;
-  --light-gray: #d8dee9;
-  --lightest-gray: #e5e9f0;
-  --white: #eceff4;
+  --black: #232634;
+  --darker-gray: #292c3c;
+  --dark-gray: #303446;
+  --gray: #414559;
+  --light-gray: #51576d;
+  --lightest-gray: #b5bfe2;
+  --white: #c6d0f5;
 
-  --teal: #8fbcbb;
-  --light-blue: #88c0d0;
-  --cornflower: #81a1c1;
-  --bue: #5e81ac;
-  --reb: #bf616a;
-  --orange: #d08770;
-  --yellow: #ebcb8b;
-  --green: #a3be8c;
-  --porpol: #b48ead;
+  --teal: #81c8be;
+  --light-blue: #99d1db;
+  --cornflower: #85c1dc;
+  --bue: #8caaee;
+  --reb: #e78284;
+  --orange: #ef9f76;
+  --yellow: #e5c890;
+  --green: #a6d189;
+  --porpol: #ca9ee6;
   
   /*NEW TUFF COLORS */
   --blackest: #2c3531;
@@ -24,6 +24,12 @@
   --bagel: #ffcb9a;
   --perry: #d1e8e2;
 
+  /* used colors and their names */
+  --bg: var(--black);
+  --text: var(--white);
+  --link: var(--teal);
+  --highlight: var(--porpol);
+  --icon: var(--cornflower);
 }
 h1 {
   font-size: 96px;
@@ -42,13 +48,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--teal);
-  background-color: var(--black);
+  color: var(--text);
+  background-color: var(--bg);
 }
 
 a {
-	text-decoration: none;
-  color: var(--bue);
+  text-decoration: none;
+  color: var(--link);
 }
 
 .center{
@@ -69,17 +75,17 @@ a {
   display: flex;
   flex-direction: column;
   border-width: 4px;
-  border: 2px solid rgba(146,220,254);
+  border: 2px solid var(--link);
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;
 }
 
 .custcard:hover {
-  box-shadow: -6px -6px 0px var(--black), -12px -12px 0px var(--porpol), 6px 6px 0px var(--black), 12px 12px 0px var(--porpol);
+  box-shadow: -6px -6px 0px var(--bg), -12px -12px 0px var(--highlight), 6px 6px 0px var(--black), 12px 12px 0px var(--highlight);
 }
 .custcard {
-  transition: box-shadow 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: box-shadow 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .card-header {
@@ -104,12 +110,12 @@ a {
 
 i {
   font-size: 48px;
-  color: var(--green);
+  color: var(--icon);
   margin-bottom: 5px;
 }
 
 .divider-line {
-  border-bottom: 1px solid rgb(229, 229, 229);
+  /*border-bottom: 1px solid rgb(229, 229, 229);*/
   margin-bottom: 20px;
 }
 
