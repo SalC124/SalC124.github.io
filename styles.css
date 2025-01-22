@@ -71,7 +71,7 @@ a {
 
 .custcard {
   width: 8vw; /* 150px */
-  height: 10vh; /* 115px */
+  height: 5vw; /* 115px */
   display: flex;
   flex-direction: column;
   border-width: 4px;
