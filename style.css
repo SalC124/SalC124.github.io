@@ -26,7 +26,7 @@
 
   /* used colors and their names */
   --bg: var(--darker-gray);
-  --match-bg: var(--bg)
+  --match-bg: var(--bg);
   --custcard: var(--black);
   --text: var(--white);
   --link: var(--teal);
