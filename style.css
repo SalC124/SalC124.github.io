@@ -25,7 +25,7 @@
   --perry: #d1e8e2;
 
   /* used colors and their names */
-  --bg: var(rgba(0,0,0,0.2));
+  --bg: rgba(0,0,0,0.2);
   --custcard: var(--black);
   --text: var(--white);
   --link: var(--teal);
