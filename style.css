@@ -25,7 +25,8 @@
   --perry: #d1e8e2;
 
   /* used colors and their names */
-  --bg: rgba(0,0,0,0.2);
+  --bg: rgba(41, 44, 60,0.2);
+  --transparent: rgba(0,0,0,0)
   --custcard: var(--black);
   --text: var(--white);
   --link: var(--teal);
@@ -61,7 +62,7 @@ i {
 .header {
   width: 100%;
   text-align: center;
-  background-color: var(--bg);
+  background-color: var(--transparent);
   padding: 1rem;
   margin: 0 auto;
 }
@@ -91,9 +92,9 @@ i {
 
 .custcard:hover {
   box-shadow:
-    -8px -8px 0px var(--bg),
+    -8px -8px 0px var(--transparent),
     -18px -18px 0px var(--highlight),
-    8px 8px 0px var(--bg),
+    8px 8px 0px var(--transparent),
     18px 18px 0px var(--highlight);
 }
 
