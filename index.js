@@ -1,7 +1,7 @@
 function setPowerOfTwoColumns() {
   const gridContainer = document.querySelector('.cards');
   const containerWidth = gridContainer.clientWidth;
-  const columnWidth = 250; // Minimum width for each column
+  const columnWidth = 350; // Minimum width for each column
   let columns = Math.floor(containerWidth / columnWidth);
   let powerOfTwoColumns = 1;
 
