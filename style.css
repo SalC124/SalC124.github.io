@@ -36,6 +36,10 @@
 
 * {
   overflow-wrap: break-word;
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
