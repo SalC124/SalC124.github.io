@@ -3,6 +3,7 @@ const cards = [
   { link: "https://bcts.powerschool.com/public/", name: "Powerschool", icon: "fas fa-graduation-cap" },
   { link: "https://outlook.office.com/mail/", name: "Outlook", icon: "fa-sharp fa-solid fa-envelope" },
   { link: "https://signup.bergen.org/dashboard/index.php/", name: "Dashboard", icon: "fab fa-elementor" },
+  { link: "https://classroom.google.com", name: "Classroom", icon: "fa-solid fa-landmark"},
   { link: "https://www.blinklearning.com/v/1703163655/themes/tmpux/launch.php#content/", name: "BlinkLearning", icon: "fa fa-book-open" },
   { link: "https://www.deltamath.com/app/student/3036485/upcoming/", name: "DeltaMath", icon: "fa-solid fa-calculator" },
   { link: "https://student.cengage.com/dashboard/", name: "Webassign", icon: "fa-solid fa-superscript" },
@@ -14,7 +15,6 @@ const cards = [
   { link: "https://www.turnitin.com/login_page.asp?lang=en_us/", name: "Turnitin", icon: "far fa-file-alt" },
   { link: "https://student.naviance.com/bca/", name: "Naviance", icon: "far fa-compass" },
   { link: "https://outlook.office365.com/owa/calendar/CounselorBookings@bergen.org/bookings/", name: "Guidance Signup", icon: "fas fa-hands-helping" },
-  { link: "https://spanishdict.com", name: "SpanishDict", icon: "fa-solid fa-book" }
 ];
 
 function cardFactory(cards) {
