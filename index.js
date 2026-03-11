@@ -11,7 +11,7 @@ const cards = [
   { link: "https://docs.google.com/document/d/e/2PACX-1vRkhySmwAiTtY88tcshckpV4F0vRrULccaGrYl_Sf2ubWpyyXA4l8c-KAOuMzSwFe-qyAQhLqXzVsbA/pub", name: '"TableJet"', icon: "fa-solid fa-list", },
   { link: "https://drive.google.com/drive/my-drive", name: "Google Drive", icon: "fa-brands fa-google-drive", },
   { link: "https://www.office.com/", name: "MS Office", icon: "fa-brands fa-microsoft", },
-  { link: "https://student.desmos.com/", name: "Desmos", icon: "fa-solid fa-shapes", },
+  { link: "https://student.thinkib.net/login", name: "InThinking", icon: "fa-solid fa-list-check", },
   { link: "https://www.turnitin.com/login_page.asp?lang=en_us/", name: "Turnitin", icon: "far fa-file-alt", },
   { link: "https://student.naviance.com/bca/", name: "Naviance", icon: "far fa-compass", },
   { link: "https://outlook.office365.com/owa/calendar/CounselorBookings@bergen.org/bookings/", name: "Guidance Signup", icon: "fas fa-hands-helping", },
