@@ -1,33 +1,8 @@
-:root {
-  --bg: #11111b;
-  --match-bg: var(--bg);
-  --custcard: #1e1e2e;
-  --text: #cdd6f4;
-  --link: #89b4fa;
-  --highlight: #cba6f7;
-  --icon: #a6e3a1;
-}
-
-@font-face {
-  font-family: CaskaydiaCove;
-  src: url(./CaskaydiaCoveNerdFontMono-Regular.ttf);
-}
-
 * {
-  font-family: CaskaydiaCove;
   overflow-wrap: break-word;
-  /* CSS Reset */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-size: 32px;
-  color: var(--text);
-  background-color: var(--bg);
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -100,6 +75,8 @@ i {
 }
 
 .footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   text-align: center;
   justify-content: end;
 }
