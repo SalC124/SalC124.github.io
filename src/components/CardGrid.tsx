@@ -7,27 +7,31 @@ import styles from "../views/Home.module.css";
 const CardGrid = ({ cards }: CardGridProps) => {
   let gridRef: HTMLDivElement | undefined;
 
-  function setPowerOfTwoColumns() {
+  function largestDivisorThatFits(
+    count: number,
+    containerWidth: number,
+    minColWidth: number,
+  ): number {
+    const maxColumns = Math.floor(containerWidth / minColWidth);
+    for (let n = maxColumns; n >= 1; n--) {
+      if (count % n === 0) return n;
+    }
+    return 1;
+  }
+
+  function updateColumns() {
     if (!gridRef) return;
-    const columnWidth = 350;
-    let columns = Math.floor(gridRef.clientWidth / columnWidth);
-    let powerOfTwoColumns = 1;
-    while (powerOfTwoColumns * 2 <= columns) {
-      powerOfTwoColumns *= 2;
-    }
-    if (powerOfTwoColumns > columns) {
-      powerOfTwoColumns /= 2;
-    }
-    gridRef.style.gridTemplateColumns = `repeat(${powerOfTwoColumns}, 1fr)`;
+    const cols = largestDivisorThatFits(cards.length, gridRef.clientWidth, 350);
+    gridRef.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
   }
 
   onMount(() => {
-    setPowerOfTwoColumns();
-    window.addEventListener("resize", setPowerOfTwoColumns);
+    updateColumns();
+    window.addEventListener("resize", updateColumns);
   });
 
   onCleanup(() => {
-    window.removeEventListener("resize", setPowerOfTwoColumns);
+    window.removeEventListener("resize", updateColumns);
   });
 
   return (
