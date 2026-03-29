@@ -2,7 +2,7 @@ import { For, onMount, onCleanup } from "solid-js";
 
 import Card from "./Card";
 import type { CardGridProps } from "../types";
-import styles from "../views/Home.module.css";
+import styles from "./CardGrid.module.css";
 
 const CardGrid = ({ cards }: CardGridProps) => {
   let gridRef: HTMLDivElement | undefined;
@@ -35,7 +35,7 @@ const CardGrid = ({ cards }: CardGridProps) => {
   });
 
   return (
-    <div ref={gridRef} class={styles.cards}>
+    <div ref={gridRef} class={styles.grid}>
       <For each={cards}>{(c) => <Card {...c} />}</For>
     </div>
   );

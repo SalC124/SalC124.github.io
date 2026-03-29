@@ -1,0 +1,7 @@
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  box-sizing: border-box;
+}
