@@ -10,9 +10,9 @@ const CardGrid = ({ cards }: CardGridProps) => {
   function largestDivisorThatFits(
     count: number,
     containerWidth: number,
-    minColWidth: number,
+    minWidth: number,
   ): number {
-    const maxColumns = Math.floor(containerWidth / minColWidth);
+    const maxColumns = Math.floor(containerWidth / minWidth);
     for (let n = maxColumns; n >= 1; n--) {
       if (count % n === 0) return n;
     }
@@ -21,7 +21,12 @@ const CardGrid = ({ cards }: CardGridProps) => {
 
   function updateColumns() {
     if (!gridRef) return;
-    const cols = largestDivisorThatFits(cards.length, gridRef.clientWidth, 350);
+    const minColWidth = window.innerWidth <= 768 ? 160 : 350;
+    const cols = largestDivisorThatFits(
+      cards.length,
+      gridRef.clientWidth,
+      minColWidth,
+    );
     gridRef.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
   }
 

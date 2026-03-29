@@ -11,7 +11,6 @@
   --mono: CaskaydiaCove;
 
   font-family: var(--mono);
-  letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -19,6 +18,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-size: 16px;
 }
 
 @font-face {
@@ -61,9 +62,15 @@
 }
 
 body {
-  font-size: 32px;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 6px;
+  }
 }
 
 *,
