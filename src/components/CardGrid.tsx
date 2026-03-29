@@ -40,7 +40,18 @@ const CardGrid = ({ cards }: CardGridProps) => {
   });
 
   return (
-    <div ref={gridRef} class={styles.grid}>
+    <div
+      ref={gridRef}
+      class={styles.grid}
+      onMouseMove={(e) => {
+        const cards = gridRef!.querySelectorAll<HTMLElement>("[data-card]");
+        cards.forEach((card) => {
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+          card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+        });
+      }}
+    >
       <For each={cards}>{(c) => <Card {...c} />}</For>
     </div>
   );
