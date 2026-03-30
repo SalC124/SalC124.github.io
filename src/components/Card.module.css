@@ -4,8 +4,9 @@
   color: var(--text);
   padding: 1rem;
   height: 11rem;
+  --radius: 12rem;
   background: radial-gradient(
-      circle 12rem at var(--mouse-x, -100%) var(--mouse-y, -100%),
+      circle var(--radius) at var(--mouse-x, -100%) var(--mouse-y, -100%),
       var(--highlight),
       var(--bg)
     )
@@ -14,7 +15,13 @@
   border-radius: 1.25rem;
   width: 100%;
   box-sizing: border-box;
-  transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition:
+    --radius 2000s cubic-bezier(0.075, 0.82, 0.165, 1),
+    box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card:hover {
+  --radius: 32rem;
 }
 
 .card::before {
@@ -22,13 +29,13 @@
   position: absolute;
   inset: 0;
   background: var(--custcard);
-  opacity: 0.98;
+  opacity: 1;
   border-radius: inherit;
   transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .card:hover::before {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .header {
@@ -45,7 +52,8 @@
   padding: 1rem 0;
 }
 
-.header, .main {
+.header,
+.main {
   position: relative;
 }
 
