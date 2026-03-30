@@ -30,28 +30,28 @@ const CardGrid = ({ cards }: CardGridProps) => {
     gridRef.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
   }
 
+  function updateMousePosition(e: MouseEvent) {
+    const cardEls = gridRef!.querySelectorAll<HTMLElement>("[data-card]");
+    cardEls.forEach((card) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+      card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+    });
+  }
+
   onMount(() => {
     updateColumns();
     window.addEventListener("resize", updateColumns);
+    window.addEventListener("mousemove", updateMousePosition);
   });
 
   onCleanup(() => {
     window.removeEventListener("resize", updateColumns);
+    window.removeEventListener("mousemove", updateMousePosition);
   });
 
   return (
-    <div
-      ref={gridRef}
-      class={styles.grid}
-      onMouseMove={(e) => {
-        const cards = gridRef!.querySelectorAll<HTMLElement>("[data-card]");
-        cards.forEach((card) => {
-          const rect = card.getBoundingClientRect();
-          card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
-          card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
-        });
-      }}
-    >
+    <div ref={gridRef} class={styles.grid}>
       <For each={cards}>{(c) => <Card {...c} />}</For>
     </div>
   );
