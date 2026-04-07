@@ -32,7 +32,7 @@ export const cards: CardProps[] = [
     icon: "fa fa-book-open",
   },
   {
-    link: "https://www.deltamath.com/app/student/3036485/upcoming/",
+    link: "https://www.deltamath.com/app/student/",
     name: "DeltaMath",
     icon: "fa-solid fa-calculator",
   },
